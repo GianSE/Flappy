@@ -107,6 +107,8 @@ const mensagemGetReady = {
     },
 };
         
+
+
 function loop(){
     planoDeFundo.desenha();
     chao.desenha();
