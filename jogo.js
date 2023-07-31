@@ -113,7 +113,7 @@ function loop(){
     flappybird.desenha();
     flappybird.atualiza();
     mensagemGetReady.desenha();
-    //pegadinha
+    //teste
     
     requestAnimationFrame(loop);
 }
