@@ -112,7 +112,7 @@ function loop(){
     planoDeFundo.desenha();
     chao.desenha();
     flappybird.desenha();
-    flappybird.atualiza();
+    // flappybird.atualiza();
     mensagemGetReady.desenha();
     
     requestAnimationFrame(loop);
