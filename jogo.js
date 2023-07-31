@@ -112,7 +112,7 @@ function loop(){
     chao.desenha();
     flappybird.desenha();
     // flappybird.atualiza();
-    mensagemGetReady.desenha();
+    // mensagemGetReady.desenha();
     
     requestAnimationFrame(loop);
 }
