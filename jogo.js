@@ -107,16 +107,49 @@ const mensagemGetReady = {
     },
 };
 
+//
+// [Tela]
+//
+let telaAtiva
+    function mudaParaTela(novaTela){
+    telaAtiva = novaTela;
+    }
+
+const Telas = {
+    INICIO: {
+        desenha(){
+            mensagemGetReady.desenha();
+        },
+        atualiza() {
+            
+        }
+    }
+};
+
+Telas.JOGO = {
+    desenha(){
+        planoDeFundo.desenha();
+        chao.desenha();
+        flappybird.desenha();
+    },
+    atualiza() {
+        flappybird.atualiza();
+    }
+}
+
+
 
 function loop(){
+    flappybird.atualiza();
+
     planoDeFundo.desenha();
     chao.desenha();
     flappybird.desenha();
-    flappybird.atualiza();
+
     mensagemGetReady.desenha();
-    //teste
     
     requestAnimationFrame(loop);
 }
 
+mudaParaTela(Telas.INICIO);
 loop();
